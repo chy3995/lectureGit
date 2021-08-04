@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0105 조희연</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        header{
+            padding: 10px;
+            background-color: aqua;
+        }
+        nav{
+            background-color: cadetblue;
+            overflow: hidden;
+        }
+        nav a{
+            float: left;
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+        }
+        section h2{
+            margin: 0;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            background-color: coral;
+        }
+        .box {
+            float: left;
+            width: 33.33%;
+            padding: 0px 0px 100px 20px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        footer{
+            padding: 10px;
+            padding-left: 20px;
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>복합 5단 레이아웃 float[1:1:1]</h1>
+    </header>
+    <nav>
+        <a href="#">nav1</a>
+        <a href="#">nav2</a>
+        <a href="#">nav3</a>
+    </nav>
+    <section>
+        <h2>content</h2>
+            <div class="clearfix">
+                <div class="box" style="background-color:lightblue;">
+                  <p>내용1</p>
+                </div>
+                <div class="box" style="background-color:lightcyan;">
+                  <p>내용2</p>
+                </div>
+                <div class="box" style="background-color:lightblue;">
+                  <p>내용3</p>
+                </div>
+              </div>
+    </section>
+    <footer>
+        <p>하단</p>
+    </footer>
+</body>
+</html>
