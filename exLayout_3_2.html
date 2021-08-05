@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0105 조희연</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        header{
+            padding: 10px;
+            background-color: aqua;
+        }
+        nav{
+            background-color: cadetblue;
+            overflow: hidden;
+        }
+        nav a{
+            float: left;
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+        }
+        section{
+            padding: 20px 0px;
+            background-color: coral;
+        }
+        section .one{
+            float: left;
+            width: 25%;
+
+            margin: 0;
+            padding: 10px;
+            height: 200px;
+            /*background-color: khaki;*/
+        }
+        section .two{
+            float: left;
+            width: 50%;
+
+            margin: 0;
+            padding: 10px;
+            height: 200px;
+            /*background-color: khaki;*/
+        }
+        @media (max-width:600px){
+            section p{
+                width: 100%;
+            }
+        }
+        footer{
+            clear: both;
+            padding: 10px;
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>복합 5단 레이아웃 float[1:2:1]</h1>
+    </header>
+    <nav>
+        <a href="#">nav1</a>
+        <a href="#">nav2</a>
+        <a href="#">nav3</a>
+    </nav>
+    <section>
+        <h2>content</h2>
+        <p class="one" style="background-color:lightblue;">내용1</p>
+        <p class="two" style="background-color:lightcyan;">내용2</p>
+        <p class="one" style="background-color:lightblue;">내용3</p>
+    </section>
+    <footer>
+        <p>하단</p>
+    </footer>
+</body>
+</html>
