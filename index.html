@@ -4,83 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <title>0105 조희연</title>
-    <style>
-        *{
-            box-sizing: border-box;
-            
-        }
-        body{
-            margin: 0;
-            height: 1000px;
-        }
-        header{
-            padding: 10px;
-            background-color: aqua;
-        }
-        nav{
-            background-color: cadetblue;
-            overflow: hidden;
-            height: 100px;
-        }
-        nav a{
-            float: left;
-            display: block;
-            padding: 20px;
-            text-decoration: none;
-        }
-        section{
-            padding: 20px 0px;
-            background-color: coral;
-            height: 92px;
-            text-align: center;
-            margin: 0;
-        }
-        section .one{
-            float: left;
-            width: 20%;
-            
-            margin: 0;
-            height: 700px;
-            padding: 10px;
-        }
-        section .two{
-            float: left;
-            width: 60%;
-
-            margin: 0;
-            padding: 10px;
-            height: 700px;
-        }
-        @media (max-width:600px){
-            section p{
-                width: 100%;
-            }
-        }
-        footer{
-            clear: both;
-            padding: 10px;
-            background-color: darkgoldenrod;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>웹페이지 만들기</h1>
+        <h1>세계 여러나라</h1>
     </header>
     <nav>
-        <a href="#">nav1</a>
-        <a href="#">nav2</a>
-        <a href="#">nav3</a>
+        <a href="#">유럽</a>
+        <a href="#">아프리카</a>
+        <a href="#">아시아</a>
+        <a href="#">북아메리카</a>
+        <a href="#">남아메리카</a>
+        <a href="#">오세아니아</a>
     </nav>
     <section>
-        <h2>content</h2>
-        <p class="one" style="background-color:lightblue;">내용1</p>
-        <p class="two" style="background-color:lightcyan;">내용2</p>
-        <p class="one" style="background-color:lightblue;">내용3</p>
+        <h2>대륙</h2>
+        <div class="one" style="background-color:lightgray;">
+            <b>유럽과 아프리카</b><br>
+            <img src="./eurupe.PNG" alt="">
+            <p>유럽, 아프리카 : 대한민국으로부터<br> 서쪽에 위치한 대륙</p>
+        </div>
+        <div class="one" style="background-color:lightgoldenrodyellow;">
+            <b>아시아와 오세아니아</b><br>
+            <img src="./asia.PNG" alt="">
+            <p>아시아 : 대한민국이 위치한 대륙</p>
+            <p>오세아니아 : 대한민국으로부터<br> 남쪽에 위치한 대륙</p>
+        </div>
+        <div class="one" style="background-color:lightblue;">
+            <b>북아메리카와 남아메리카</b><br>
+            <img src="./america.PNG" alt="">
+            <p>아메리카 : 대한민국으로부터 동쪽에 위치한 대륙</p>
+        </div>
     </section>
     <footer>
-        <p>하단</p>
+        <p> ○○○○○ &copy; ALL Rights Reserved.</p>
     </footer>
 </body>
 </html>
